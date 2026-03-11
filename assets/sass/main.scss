@@ -655,6 +655,33 @@
 		}
 	}
 
+	.partner-logos {
+		.box.alt {
+			margin-bottom: 0;
+		}
+
+		.image.fit {
+			@include vendor('align-items', 'center');
+			@include vendor('display', 'flex');
+			height: 6rem;
+			margin: 0;
+			padding: 0.35rem;
+
+			img {
+				height: 100%;
+				object-fit: contain;
+				object-position: center;
+				width: 100%;
+			}
+		}
+
+		@include breakpoint('<=small') {
+			.image.fit {
+				height: 4.75rem;
+			}
+		}
+	}
+
 /* List */
 
 	ol {

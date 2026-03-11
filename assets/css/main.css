@@ -2129,9 +2129,43 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.fit img {
+		.image.fit img {
 				width: 100%;
 			}
+
+	.partner-logos .box.alt {
+		margin-bottom: 0;
+	}
+
+	.partner-logos .image.fit {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		height: 6rem;
+		margin: 0;
+		padding: 0.35rem;
+	}
+
+		.partner-logos .image.fit img {
+			height: 100%;
+			-o-object-fit: contain;
+			object-fit: contain;
+			object-position: center;
+			width: 100%;
+		}
+
+	@media screen and (max-width: 736px) {
+
+		.partner-logos .image.fit {
+			height: 4.75rem;
+		}
+
+	}
 
 /* List */
 
