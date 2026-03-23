@@ -2165,11 +2165,11 @@ input, select, textarea {
 	}
 
 		.partner-logos .partner-logo img {
-			height: 100%;
-			-o-object-fit: contain;
-			object-fit: contain;
-			object-position: center;
-			width: 100%;
+			display: block;
+			max-height: 100%;
+			max-width: 100%;
+			width: auto;
+			padding: 0.25rem;
 		}
 
 		.partner-logos .partner-logo-imperial {
