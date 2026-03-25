@@ -3771,6 +3771,16 @@ body.is-menu-visible #menu {
   z-index: 1;
 }
 
+#banner .banner-logo {
+  display: block;
+  margin: 0 auto 1.5em auto;
+  height: 14.25em;
+  width: auto;
+  max-width: min(80vw, 28em);
+  position: relative;
+  z-index: 1;
+}
+
 #banner h2:before,
 #banner h2:after {
   -moz-transition: width 0.85s ease;
@@ -3892,6 +3902,11 @@ body.is-menu-visible #menu {
 
   #banner h2 {
     font-size: 1.25em;
+  }
+
+  #banner .banner-logo {
+    height: 10em;
+    margin-bottom: 1em;
   }
 
   #banner br {
