@@ -4274,7 +4274,30 @@ body.is-mobile.landing #page-wrapper {
   background: none;
 }
 
-body.is-mobile.landing #banner,
+body.is-mobile.landing #banner {
+  background-image:
+    -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/millenium_cosmic_web_springel.png");
+  background-image:
+    -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/millenium_cosmic_web_springel.png");
+  background-image:
+    -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/millenium_cosmic_web_springel.png");
+  background-image:
+    linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/millenium_cosmic_web_springel.png");
+  background-image:
+    linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    image-set(
+      url("../../images/millenium_cosmic_web_springel.webp") type("image/webp"),
+      url("../../images/millenium_cosmic_web_springel.png") type("image/png")
+    );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 body.is-mobile.landing .wrapper.style4 {
   background-image:
     -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
