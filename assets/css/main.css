@@ -2900,6 +2900,62 @@ button:disabled,
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.lss-theme-page .spotlight .content {
+  margin: 0 auto;
+  max-width: 60em;
+  width: 90%;
+}
+
+.lss-theme-page .spotlight:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.lss-theme-page .spotlight:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.lss-theme-page .spotlight:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0.225);
+}
+
+.lss-theme-page .spotlight:nth-child(4) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lss-image-comparison,
+.lss-observation-comparison {
+  align-items: center;
+  display: flex;
+  gap: 2em;
+}
+
+.lss-image-comparison {
+  margin-top: 2em;
+}
+
+.lss-observation-comparison {
+  margin-top: 1em;
+}
+
+.lss-image-copy {
+  flex: 1;
+}
+
+.lss-image-panel {
+  flex: 0 0 45%;
+}
+
+.lss-image-panel img {
+  display: block;
+  width: 100%;
+}
+
+.image-caption {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 0.75em 0 0 0;
+}
+
 @media screen and (max-width: 1280px) {
   .spotlight .image {
     width: 45%;
@@ -2928,6 +2984,15 @@ button:disabled,
     max-width: none;
     text-align: center;
     width: 100%;
+  }
+
+  .lss-image-comparison,
+  .lss-observation-comparison {
+    display: block;
+  }
+
+  .lss-image-panel {
+    margin-top: 2em;
   }
 }
 
@@ -4068,7 +4133,11 @@ body.is-preload #banner:after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.55));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.42),
+    rgba(0, 0, 0, 0.55)
+  );
   z-index: 1;
 }
 
