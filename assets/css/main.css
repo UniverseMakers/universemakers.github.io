@@ -3849,11 +3849,7 @@ body.is-menu-visible #menu {
   overflow: hidden;
   position: relative;
   text-align: center;
-  background-image: url("../../images/millenium_cosmic_web_springel.png");
-  background-image: image-set(
-    url("../../images/millenium_cosmic_web_springel.webp") type("image/webp"),
-    url("../../images/millenium_cosmic_web_springel.png") type("image/png")
-  );
+  background-image: url("../../images/2-McAlpine.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3990,14 +3986,14 @@ body.is-menu-visible #menu {
 
 #banner:after {
   pointer-events: none;
-  -moz-transition: opacity 3s ease-in-out;
-  -webkit-transition: opacity 3s ease-in-out;
-  -ms-transition: opacity 3s ease-in-out;
-  transition: opacity 3s ease-in-out;
-  -moz-transition-delay: 1.25s;
-  -webkit-transition-delay: 1.25s;
-  -ms-transition-delay: 1.25s;
-  transition-delay: 1.25s;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  -moz-transition-delay: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   content: "";
   background: #2e3842;
   display: block;
@@ -4393,22 +4389,16 @@ body.is-mobile.landing #page-wrapper {
 body.is-mobile.landing #banner {
   background-image:
     -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/millenium_cosmic_web_springel.png");
+    url("../../images/2-McAlpine.webp");
   background-image:
     -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/millenium_cosmic_web_springel.png");
+    url("../../images/2-McAlpine.webp");
   background-image:
     -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/millenium_cosmic_web_springel.png");
+    url("../../images/2-McAlpine.webp");
   background-image:
     linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../images/millenium_cosmic_web_springel.png");
-  background-image:
-    linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    image-set(
-      url("../../images/millenium_cosmic_web_springel.webp") type("image/webp"),
-      url("../../images/millenium_cosmic_web_springel.png") type("image/png")
-    );
+    url("../../images/2-McAlpine.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
