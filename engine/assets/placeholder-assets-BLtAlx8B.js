@@ -331,9 +331,10 @@ planetary:
       precision: 2
       description: How big the planet ended up after the impact.
     - id: spin
-      label: Earth—Moon system spin
+      label: System spin
       target: 1.0
       value: '--'
+      unit: Earth—Moon system
       display_format: float
       precision: 3
       description: The combined 'angular momentum' of the spinning planet and anything in orbit, compared with the real system (3.4×10³⁴ kg m² / s).
@@ -341,27 +342,27 @@ planetary:
     - id: similarityScore
       label: Similarity score
       value: '--'
-      description: How similar would the moon that formed from this impact be to ours overall?
+      description: How similar the moon that formed from this impact would be to ours overall.
     - id: moon_iron_percent
       label: Moon-forming iron
       value: '--'
       unit: '%'
       display_format: float
       precision: 1
-      description: What fraction of the moon-forming material is iron? Our Moon is mostly rock with a very small iron core, around 2% of its mass. Typical rocky planets like Earth are around 30% core and 70% mantle.
+      description: The fraction of the moon-forming material that is iron. Our Moon is mostly rock with a very small iron core, around 2% of its mass. Typical rocky planets like Earth are around 30% core and 70% mantle.
     - id: proto_earth_in_moon_percent
       label: Moon-forming proto-Earth
       value: '--'
       unit: '%'
       display_format: float
       precision: 1
-      description: What fraction of the moon-forming material came from the proto-Earth target rather than the impactor? Analysis of Moon and Earth rocks shows their makeup is very similar, but most impact scenarios struggle to mix together enough material to immediately explain this.
+      description: The fraction of the moon-forming material that came from the proto-Earth target rather than the impactor? Analysis of Moon and Earth rocks shows their makeup is very similar, but most impact scenarios struggle to mix together enough material to immediately explain this.
     - id: scenario_likelihood
       label: Scenario likelihood
       value: '--'
       unit: ''
       display_format: string
-      description: We only have one Moon like ours to study, and its possible that its formation wasn't very likely! However, impacts at very low or high angles, or very high speeds, are less likely. Impacts at very low speeds might not even be possible in reality without something mysterious to slow down the impactor, but that doesn't stop us from simulating what could happen if it did.
+      description: We only have one Moon like ours to study, and it's possible that its formation wasn't very likely! However, impacts at very low or high angles, or very high speeds, are less likely. Impacts at very low speeds might not even be possible in reality without something mysterious to slow down the impactor, but that doesn't stop us from simulating what could happen if it did.
   similarityScore:
     value: '--'
 
@@ -710,4 +711,4 @@ cosmos:
             </div>
             <div class="sci-bar__value">${P.formattedValue}</div>
           `,re.addEventListener("click",()=>S(P)),dt.appendChild(re)}De.appendChild(Re),De.appendChild(dt),F.appendChild(ie),F.appendChild(De),a.appendChild(F)}}}}function tr(n,e){const t=e[n.id]??{label:n.id,value:"--"},s=t.value!=="--"?t.value:"--",i=nr(s,n);if(i)return{label:n.label??t.label,value:i};const r=as(s,n);return{label:n.label??t.label,value:pe(r,n.unit)}}function nr(n,e){if(e.id!=="carbonBurnt"||n==="--")return null;const t=Number(n);return Number.isFinite(t)?Math.abs(t)<1?pe(Qe(n,{scale:(e.valueScale??1)*1e3,mode:"float",precision:1}),"g CO2"):pe(Qe(n,{scale:e.valueScale,mode:"float",precision:e.precision??2}),e.unit):pe(n,e.unit)}function as(n,e){if(n==="--")return n;if(e.displayFormat==="scientific"||e.displayFormat==="compact"||e.displayFormat==="float")return Qe(n,{scale:e.valueScale,mode:e.displayFormat,precision:e.precision});if(e.displayFormat==="integer")return Qe(n,{scale:e.valueScale,mode:"integer"});const t=Number(n);if(!Number.isFinite(t))return n;const s=e.valueScale??1,i=t*s;return Gt(i)}const os="universe-engine-advanced-settings",vr="RSSSE26UM_Engine";function Ct(){return{lockedScaleId:null,manifestSource:"online",verboseLogging:!1,hiddenScaleIds:[]}}function sr(n){const e=localStorage.getItem(os);if(!e)return Ct();try{const t=JSON.parse(e);return ls(t,n)}catch{return Ct()}}function _r(n,e){const t=ls(n,e);return localStorage.setItem(os,JSON.stringify({lockedScaleId:t.lockedScaleId,manifestSource:t.manifestSource,verboseLogging:t.verboseLogging,hiddenScaleIds:t.hiddenScaleIds})),t}function ls(n,e){const t=Ct(),s=new Set(e),i=n.manifestSource==="online"||n.manifestSource==="local"?n.manifestSource:t.manifestSource,r=typeof n.lockedScaleId=="string"&&s.has(n.lockedScaleId)?n.lockedScaleId:null,a=Array.isArray(n.hiddenScaleIds)?n.hiddenScaleIds.filter((o,l,c)=>typeof o=="string"&&s.has(o)&&c.indexOf(o)===l&&o!==r):t.hiddenScaleIds;return!r&&a.length>=e.length&&e.length>0&&a.pop(),{lockedScaleId:r,manifestSource:i,verboseLogging:!!n.verboseLogging,hiddenScaleIds:a}}function Nr(n,e){if(n.lockedScaleId)return[n.lockedScaleId];const t=new Set(n.hiddenScaleIds),s=e.filter(i=>!t.has(i));return s.length>0?s:e.slice(0,1)}function ir(n){return n.replace(/\.mp4($|\?)/,".yaml$1")}async function Er(n){try{const e=await fetch(n);if(!e.ok)return null;const t=await e.text(),s=se(t),i=ce(s.wallclockSeconds),r=ce(s.computeUsed),a=ce(s.memoryUsed),o=ce(s.carbonBurnt),l=ce(s.particlesUpdated),c=await rr(n),m=or(s.summaryMetrics);return i===null||r===null||a===null||o===null||l===null?null:{wallclockSeconds:i,computeUsed:r,memoryUsed:a,carbonBurnt:o,particlesUpdated:l,parameterValues:c,summaryMetrics:m}}catch{return null}}async function rr(n){try{const e=await fetch(ar(n));if(!e.ok)return{};const t=await e.text(),s=se(t);return lr(s)}catch{return{}}}function ar(n){return n.replace(/run_summary\.yaml($|\?)/,"parameters.yaml$1")}function ce(n){const e=typeof n=="number"?n:Number(n);return Number.isFinite(e)?e:null}function or(n){if(!n||typeof n!="object")return{};const e=n,t={};for(const[s,i]of Object.entries(e)){if(!i||typeof i!="object")continue;const r=i,a=typeof r.label=="string"?r.label:s,o=r.value;o!=null&&(t[s]={label:a,value:String(o)})}return t}function lr(n){if(!n||typeof n!="object")return{};const e={};for(const[t,s]of Object.entries(n)){const i=ce(s);i!==null&&(e[t]=i)}return e}const cs="[UniverseEngine]",cr=["planetary","galaxy","cosmos"];function us(){return sr(cr).verboseLogging}function Jt(n,e){us()&&console.info(cs,n,e??"")}function Qt(n,e){us()&&console.warn(cs,n,e??"")}const ur={local:"assets/local-manifest.json",online:xi};function Tr(n="local"){let e=n;const t=new Map;return{getSource(){return e},setSource(s){s==="online"&&t.delete("online"),e=s,Jt("Manifest source updated",{source:s})},resetCache(){t.clear()},async preloadActiveManifest(){await fs(e,t)},async findNearestVideo(s,i,r){const a=await dr(e,t,s,i,r);if(a)return a;const o=fr(s);return Qt("Falling back to placeholder assets",{simClassId:s,source:e,fallbackUrl:o}),{url:o,liveDataUrl:hr(s),summaryUrl:ir(o)}}}}function fr(n){switch(n){case"planetary":return R("assets/planet_test.mp4");case"galaxy":return R("assets/galaxy_test.mp4");case"cosmos":return R("assets/cosmo_test.mp4");default:return R("assets/galaxy_test.mp4")}}function hr(n){switch(n){case"planetary":return R("assets/planet_test_planetary_stats.csv");case"galaxy":return R("assets/galaxy_test_galaxy_stats.csv");case"cosmos":return R("assets/cosmo_test_cosmos_stats.csv");default:return R("assets/galaxy_test_galaxy_stats.csv")}}async function fs(n,e){const t=e.get(n);if(t)return t;const s=ur[n],i=fetch(R(s)).then(async r=>{if(!r.ok)throw new Error(`Failed to load manifest: ${s}`);return Jt("Loaded manifest",{source:n,manifestPath:s}),await r.json()}).catch(r=>(Qt("Manifest unavailable",{source:n,manifestPath:s,error:r instanceof Error?r.message:String(r)}),{version:1,runs:[]}));return e.set(n,i),i}async function dr(n,e,t,s,i){const a=(await fs(n,e)).runs.filter(u=>u.simulationId===t);if(a.length===0)return Qt("No manifest runs found for simulation",{simClassId:t,source:n}),null;let o=a[0],l=gn(o,s,i);for(const u of a.slice(1)){const d=gn(u,s,i);d<l&&(o=u,l=d)}const c=o.defaultView??Object.keys(o.views)[0],m=o.views[c];return m?(Jt("Selected manifest-backed run",{simClassId:t,source:n,runId:o.runId,selectedValues:i,distance:l,viewId:c}),{url:R(m),liveDataUrl:R(o.liveDataPath),summaryUrl:R(o.summaryPath),viewId:c,runId:o.runId,views:Object.fromEntries(Object.entries(o.views).map(([u,d])=>[u,R(d)]))}):null}function gn(n,e,t){return e.length===0?0:e.reduce((i,r)=>{var c;const a=t[r.id]??r.fallbackValue,o=((c=n.parameters)==null?void 0:c[r.id])??r.fallbackValue,l=Math.max(r.max-r.min,1e-9);return i+Math.abs(a-o)/l},0)/e.length}export{vr as A,wr as I,mr as S,kr as T,Gt as a,br as b,R as c,yr as d,Qt as e,Fi as f,sr as g,Tr as h,pr as i,gr as j,fr as k,Jt as l,Sr as m,ji as n,Nr as o,se as p,Er as q,ts as r,_r as s,pe as w};
-//# sourceMappingURL=placeholder-assets-bGQugwGR.js.map
+//# sourceMappingURL=placeholder-assets-BLtAlx8B.js.map
