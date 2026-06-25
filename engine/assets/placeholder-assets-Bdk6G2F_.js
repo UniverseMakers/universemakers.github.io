@@ -148,12 +148,12 @@ planetary:
 galaxy:
   label: Galaxy
   placeholderImage: assets/galaxy_example.webp
-  parameterSubtitle: Adjust the ingredients of a galaxy. What does it take to grow a galaxy like our Milky Way?
+  parameterSubtitle: Adjust the ingredients of a galaxy.  What does it take to grow a galaxy like our Milky Way?
   views:
     - id: hst
       label: Hubble Space Telescope
       icon: hubble-space-telescope
-      description: See your galaxy as the Hubble Space Telescope would — a luminous swirl of billions of stars. Brighter regions trace where the most stars were born while dark lanes mark the dust (complex molecules and tiny grains) that blocks starlight.
+      description: See your galaxy as the Hubble Space Telescope would — a luminous swirl of billions of stars.  Brighter regions trace where the most stars were born while dark lanes mark the dust (complex molecules and tiny grains) that blocks starlight.
     - id: sph_plus_hst
       label: Large Scale Structure
       icon: large-scale-structure
@@ -162,24 +162,24 @@ galaxy:
 cosmos:
   label: Cosmos
   placeholderImage: assets/cosmos_example.webp
-  parameterSubtitle: Adjust the fundamental laws of the Universe and see how matter evolves from the beginning of time. What parameters best explain the Universe we observe?
+  parameterSubtitle: Adjust the fundamental laws of the Universe and see how matter evolves from the beginning of time.  What parameters best explain the Universe we observe?
   views:
     - id: gas_density
       label: Gas Density
       icon: gas-density
-      description: The density of gas in the Universe. Gas collapses onto the cosmic web — the largest structure in the Universe as it cools and succumbs to gravity. Bright knots are galaxy clusters and groups, the wispy threads are filaments of gas stretching between them, and the dark empty patches are vast cosmic voids separating them.
+      description: The density of gas in the Universe.  Gas collapses onto the cosmic web — the largest structure in the Universe as it cools and succumbs to gravity.  Bright knots are galaxy clusters and groups, the wispy threads are filaments of gas stretching between them, and the dark empty patches are vast cosmic voids separating them.
     - id: gas_temperature
       label: Gas Temperature
       icon: gas-temperature
-      description: The temperature of the gas in the Universe. As gas collapses onto the cosmic web, it heats up but also cools as it radiates energy away. This cooling is imperitive for the formation of galaxies and stars, which can only form in cold, dense gas. However, once stars form they begin to heat the surrounding gas suppresing local star formation while supermassive black holes super heats gas as it falls into the black hole and ejects energy back into the surrounding gas on the largest scales. These are the massive bubbles seen in the gas temperature view.
+      description: The temperature of the gas in the Universe.  As gas collapses onto the cosmic web, it heats up but also cools as it radiates energy away.  This cooling is imperitive for the formation of galaxies and stars, which can only form in cold, dense gas.  However, once stars form they begin to heat the surrounding gas suppresing local star formation while supermassive black holes super heats gas as it falls into the black hole and ejects energy back into the surrounding gas on the largest scales.  These are the massive bubbles seen in the gas temperature view.
     - id: dark_matter_density
       label: Dark Matter
       icon: dark-matter
-      description: The invisible scaffolding of the cosmos. Dark matter outweighs ordinary matter five to one in our Universe — you can't see it, but without it, galaxies like ours would never have formed.
+      description: The invisible scaffolding of the cosmos.  Dark matter outweighs ordinary matter five to one in our Universe — you can't see it, but without it, galaxies like ours would never have formed.
     - id: gas_metallicity_plus_stellar_density
       label: Metals + Stars
       icon: metals-stars
-      description: Where stars live and die. This view combines the light of stars with the heavy elements they forge — oxygen, carbon, iron — sprayed back into space by supernova explosions to seed the next generation of stars.
+      description: Where stars live and die.  This view combines the light of stars with the heavy elements they forge — oxygen, carbon, iron — sprayed back into space by supernova explosions to seed the next generation of stars.
 `,Ni=`# Parameter definitions for each simulation family.
 #
 # Each top-level key is a simulation family. Parameters are keyed by id
@@ -194,21 +194,21 @@ cosmos:
 planetary:
   impactor_mass:
     label: Impactor Mass
-    description: How big was the object that smashed into the young Earth? A more massive impactor could spray out more debris — and perhaps a bigger Moon.
+    description: How big was the object that smashed into the young Earth?  A more massive impactor could spray out more debris — and perhaps a bigger Moon.
     unit: Earth masses
     min: 0.05
     max: 0.35
     step: 0.01
   impactor_velocity:
     label: Impact Speed
-    description: How fast was the impactor travelling when it hit? Faster collisions are more violent, ejecting more and hotter debris.
+    description: How fast was the impactor travelling when it hit?  Faster collisions are more violent, ejecting more and hotter debris.
     unit: km/s
     min: 8.5
     max: 30
     step: 0.1
   impactor_angle:
     label: Impact Angle
-    description: Was the impact head-on, or grazing at a high angle? A direct hit blasts material straight out, while a sideswipe can spray the debris out into a disk, or even escape as a hit and run.
+    description: Was the impact head-on, or grazing at a high angle?  A direct hit blasts material straight out, while a sideswipe can spray the debris out into a disk, or even escape as a hit and run.
     unit: °
     min: 0
     max: 65
@@ -217,7 +217,7 @@ planetary:
 galaxy:
   stellar_mass:
     label: Stellar Mass
-    description: How many stars did your galaxy make? This ranges from tiny dwarf galaxies with barely any stars up to enormous systems twice the size of the Milky Way.
+    description: How many stars did your galaxy make?  This ranges from tiny dwarf galaxies with barely any stars up to enormous systems twice the size of the Milky Way.
     unit: '×10¹⁰ solar masses'
     min: 0.1
     max: 20
@@ -227,7 +227,7 @@ galaxy:
     display_significant_figures: 3
   black_hole_mass:
     label: Black Hole Mass
-    description: How heavy is the monster at the centre? Every large galaxy harbours a supermassive black hole — this slider controls how big yours grew over cosmic time.
+    description: How heavy is the monster at the centre?  Every large galaxy harbours a supermassive black hole — this slider controls how big yours grew over cosmic time.
     unit: '×10⁶ solar masses'
     min: 0.1
     max: 250
@@ -237,7 +237,7 @@ galaxy:
     display_significant_figures: 3
   galaxy_age:
     label: Galaxy Age
-    description: How old are the stars in your galaxy? Older galaxies look redder and smoother, having had time to settle. Younger ones are bluer, brighter, and more chaotic.
+    description: How old are the stars in your galaxy?  Older galaxies look redder and smoother, having had time to settle.  Younger ones are bluer, brighter, and more chaotic.
     unit: years
     min: 4
     max: 13.8
@@ -247,7 +247,7 @@ galaxy:
 cosmos:
   baryon_fraction:
     label: Baryon Fraction
-    description: How much of the Universe is made of ordinary stuff — the atoms that form stars, planets, and you? Turn this up and there's more gas to make galaxies; turn it down and dark matter dominates.
+    description: How much of the Universe is made of ordinary stuff — the atoms that form stars, planets, and you?  Turn this up and there's more gas to make galaxies; turn it down and dark matter dominates.
     unit: ''
     min: 0.10
     max: 4
@@ -255,7 +255,7 @@ cosmos:
     value_scale: 0.159
   black_hole_strength:
     label: Black Hole Strength
-    description: How powerfully do black holes push back? As gas spirals inward it heats to millions of degrees. Some of that energy blasts back out as fierce winds or jets, shutting down star formation across entire galaxies.
+    description: How powerfully do black holes push back?  As gas spirals inward it heats to millions of degrees.  Some of that energy blasts back out as fierce winds or jets, shutting down star formation across entire galaxies.
     unit: 'K'
     min: 0.01
     max: 50.0
@@ -266,7 +266,7 @@ cosmos:
     log_scale: true
   gravity_strength:
     label: Gravity
-    description: What if gravity were stronger — or weaker? Turn it up and the cosmic web forms faster, pulling galaxies into tighter clumps. Turn it down and the Universe stays smoother and emptier for longer.
+    description: What if gravity were stronger — or weaker?  Turn it up and the cosmic web forms faster, pulling galaxies into tighter clumps.  Turn it down and the Universe stays smoother and emptier for longer.
     unit: m/s²
     min: 0.01
     max: 10
@@ -302,16 +302,16 @@ planetary:
       unit: hours
       display_format: float
       precision: 2
-      description: How long the simulation took to run. Calculating how everything moves and affects each other takes a lot of work, even for a supercomputer!
+      description: How long the simulation took to run.  Calculating how everything moves and affects each other takes a lot of work, even for a supercomputer!
     - id: carbonBurnt
       value: '--'
       unit: kg CO₂
       display_format: float
       precision: 2
-      description: The carbon cost of running this simulation. Roughly the same as the emissions from a short-haul flight.
+      description: The carbon cost of running this simulation.  Roughly the same as the emissions from a short-haul flight.
     - id: computeUsed
       value: '--'
-      description: How much internal computing time and memory the simulation needed to crunch all that physics. Shared across all the CPUs working together in the supercomputer.
+      description: How much internal computing time and memory the simulation needed to crunch all that physics.  Shared across all the CPUs working together in the supercomputer.
   results:
     - id: moon_mass
       label: Moon-forming mass
@@ -348,7 +348,7 @@ planetary:
       unit: '%'
       display_format: float
       precision: 1
-      description: The fraction of the moon-forming material that is iron. Our Moon is mostly rock with a very small iron core, around 2% of its mass. Typical rocky planets like Earth are around 30% core and 70% mantle.
+      description: The fraction of the moon-forming material that is iron.  Our Moon is mostly rock with a very small iron core, around 2% of its mass.  Typical rocky planets like Earth are around 30% core and 70% mantle.
     - id: proto_earth_in_moon_percent
       label: Moon-forming proto-Earth
       value: '--'
@@ -361,7 +361,7 @@ planetary:
       value: '--'
       unit: ''
       display_format: string
-      description: We only have one Moon like ours to study, and it's possible that its formation wasn't very likely! However, impacts at very low or high angles, or very high speeds, are less likely. Impacts at very low speeds might not even be possible in reality without something mysterious to slow down the impactor, but that doesn't stop us from simulating what could happen if it did.
+      description: We only have one Moon like ours to study, and it's possible that its formation wasn't very likely! However, impacts at very low or high angles, or very high speeds, are less likely.  Impacts at very low speeds might not even be possible in reality without something mysterious to slow down the impactor, but that doesn't stop us from simulating what could happen if it did.
   similarityScore:
     value: '--'
 
@@ -372,14 +372,14 @@ galaxy:
       unit: hours
       display_format: float
       precision: 2
-      description: How long the simulation took to run. Calculating how everything moves and affects each other takes a lot of work, even for a supercomputer!
+      description: How long the simulation took to run.  Calculating how everything moves and affects each other takes a lot of work, even for a supercomputer!
     - id: carbonBurnt
       value: '--'
       unit: kg CO₂
-      description: The carbon cost of running this simulation. Roughly the same as the emissions from a short-haul flight.
+      description: The carbon cost of running this simulation.  Roughly the same as the emissions from a short-haul flight.
     - id: computeUsed
       value: '--'
-      description: How much internal computing time and memory the simulation needed to crunch all that physics. Shared across all the CPUs working together in the supercomputer.
+      description: How much internal computing time and memory the simulation needed to crunch all that physics.  Shared across all the CPUs working together in the supercomputer.
   results:
     - id: stellar_mass
       label: Stellar mass
@@ -389,7 +389,7 @@ galaxy:
       value_scale: 1.0e10
       display_format: compact
       precision: 3
-      description: How many stars your galaxy managed to make. Each solar mass is the weight of our own Sun.
+      description: How many stars your galaxy managed to make.  Each solar mass is the weight of our own Sun.
     - id: black_hole_mass
       label: Black hole mass
       target: 4.3
@@ -405,7 +405,7 @@ galaxy:
       value: '--'
       unit: yrs
       value_scale: 1.0e9
-      description: How old the stars in your galaxy are on average. Older galaxies look redder and smoother; younger ones are bluer and more chaotic.
+      description: How old the stars in your galaxy are on average.  Older galaxies look redder and smoother; younger ones are bluer and more chaotic.
   simulationStats:
     - id: stellar_mass_msun
       label: Stellar mass
@@ -413,7 +413,7 @@ galaxy:
       unit: Msun
       display_format: compact
       precision: 3
-      description: How many stars your galaxy managed to make. Each solar mass is the weight of our own Sun.
+      description: How many stars your galaxy managed to make.  Each solar mass is the weight of our own Sun.
     - id: stellar_size_kpc
       label: Stellar size
       value: '--'
@@ -438,16 +438,16 @@ cosmos:
       unit: hours
       display_format: float
       precision: 2
-      description: How long the simulation took to run. Calculating how everything moves and affects each other takes a lot of work, even for a supercomputer!
+      description: How long the simulation took to run.  Calculating how everything moves and affects each other takes a lot of work, even for a supercomputer!
     - id: carbonBurnt
       value: '--'
       unit: kg CO₂
       display_format: float
       precision: 2
-      description: The carbon cost of running this simulation. Roughly the same as the emissions from a short-haul flight.
+      description: The carbon cost of running this simulation.  Roughly the same as the emissions from a short-haul flight.
     - id: computeUsed
       value: '--'
-      description: How much internal computing time and memory the simulation needed to crunch all that physics. Shared across all the CPUs working together in the supercomputer.
+      description: How much internal computing time and memory the simulation needed to crunch all that physics.  Shared across all the CPUs working together in the supercomputer.
   results:
     - id: stellar_fraction
       label: Stellar fraction
@@ -464,7 +464,7 @@ cosmos:
       value: '--'
       unit: K
       display_format: compact
-      description: The average temperature of gas across your universe. Hotter gas means more energetic feedback from stars and black holes.
+      description: The average temperature of gas across your universe.  Hotter gas means more energetic feedback from stars and black holes.
     - id: nhalos
       label: Galaxy halos
       target: 1587
@@ -508,7 +508,7 @@ planetary:
   liveStats:
     - id: impactor_mass
       value: '0.10'
-      unit: M⊕
+      unit: Earth masses
       live: false
     - id: impactor_velocity
       value: '12.0'
@@ -618,72 +618,72 @@ ${vt(u,1)} GB`,f=String(n.parameters.length),g=`${(o*100).toFixed(1)}%`,h=String
 
 planetary:
   Moon mass:
-    greenLow: Spot on! Your moon — or the moon that could grow out of your orbiting debris disk — came out just a fraction lighter than our real one.
-    greenHigh: Spot on! Your moon — or the moon that could grow out of your orbiting debris disk — came out just a fraction heavier than our real one.
-    amberLow: A bit light. Slightly too little material made it into orbit, or with not enough spin ("angular momentum"), so this impact would make a moon a bit smaller than ours.
-    amberHigh: A bit heavy. A lot of material made it into orbit, so this impact would make a moon even bigger than ours.
-    redLow: Very light. Not much material made it into orbit — this impact would make a moon much smaller than ours, or maybe no moon at all.
+    greenLow: Spot on!  Your moon — or the moon that could grow out of your orbiting debris disk — came out just a fraction lighter than our real one.
+    greenHigh: Spot on!  Your moon — or the moon that could grow out of your orbiting debris disk — came out just a fraction heavier than our real one.
+    amberLow: A bit light.  Slightly too little material made it into orbit, or with not enough spin ("angular momentum"), so this impact would make a moon a bit smaller than ours.
+    amberHigh: A bit heavy.  A lot of material made it into orbit, so this impact would make a moon even bigger than ours.
+    redLow: Very light.  Not much material made it into orbit — this impact would make a moon much smaller than ours, or maybe no moon at all.
     redHigh: That's a big moon! So much material was flung into orbit that this impact would make a moon far larger than ours.
   Earth mass:
-    greenLow: Spot on. The planet ended up a fraction lighter than our Earth — well within range.
-    greenHigh: Spot on. The planet ended up a fraction heavier than our Earth — well within range.
-    amberLow: A bit light. A little too much was lost in the collision, leaving Earth slightly underweight.
-    amberHigh: A bit heavy. A little too much material merged with the planet, leaving Earth slightly overweight.
-    redLow: Far too light. This impact stripped away too much material, or not enough material was added, leaving a planet far smaller than our Earth.
-    redHigh: Far too heavy. Lots of material was added with very little removed, so thia planet ends up far more massive than our Earth.
+    greenLow: Spot on.  The planet ended up a fraction lighter than our Earth — well within range.
+    greenHigh: Spot on.  The planet ended up a fraction heavier than our Earth — well within range.
+    amberLow: A bit light.  A little too much was lost in the collision, leaving Earth slightly underweight.
+    amberHigh: A bit heavy.  A little too much material merged with the planet, leaving Earth slightly overweight.
+    redLow: Far too light.  This impact stripped away too much material, or not enough material was added, leaving a planet far smaller than our Earth.
+    redHigh: Far too heavy.  Lots of material was added with very little removed, so thia planet ends up far more massive than our Earth.
   Spin of Earth-Moon system:
-    greenLow: Spot on. The system "angular momentum" is slightly lower than the real one — well within range.
-    greenHigh: Spot on. The system "angular momentum" is slightly higher than the real one — well within range.
-    amberLow: A bit low. This planet is spinning a bit slowly, or not enough material is flying around in orbit to evolve into the system we see today.
-    amberHigh: A bit high. This planet is spinning a bit fast, or too much material is flying around in orbit to match the system we see today.
-    redLow: Far too low. This impact gave the planet hardly any spin, with not much material in orbit — unlike our fairly fast-spinning and high-orbiting early Earth and Moon.
-    redHigh: Far too high. This impact drove the planet to spin super fast, with massive amounts of material flying around in orbit.
+    greenLow: Spot on.  The system "angular momentum" is slightly lower than the real one — well within range.
+    greenHigh: Spot on.  The system "angular momentum" is slightly higher than the real one — well within range.
+    amberLow: A bit low.  This planet is spinning a bit slowly, or not enough material is flying around in orbit to evolve into the system we see today.
+    amberHigh: A bit high.  This planet is spinning a bit fast, or too much material is flying around in orbit to match the system we see today.
+    redLow: Far too low.  This impact gave the planet hardly any spin, with not much material in orbit — unlike our fairly fast-spinning and high-orbiting early Earth and Moon.
+    redHigh: Far too high.  This impact drove the planet to spin super fast, with massive amounts of material flying around in orbit.
 
 galaxy:
   stellar_mass:
-    greenLow: Very close. Your galaxy built just a fraction fewer stars than the Milky Way.
-    greenHigh: Very close. Your galaxy built just a fraction more stars than the Milky Way.
-    amberLow: A bit low. Your galaxy made fewer stars than the Milky Way, so it would look smaller and dimmer in the sky.
-    amberHigh: A bit high. Your galaxy made more stars than the Milky Way, so it would be a brighter, busier place.
-    redLow: Far too low. This galaxy is a shadow of the Milky Way — far fewer stars than the real thing.
-    redHigh: Far too high. This galaxy is absolutely bursting with stars, far more than the Milky Way.
+    greenLow: Very close.  Your galaxy built just a fraction fewer stars than the Milky Way.
+    greenHigh: Very close.  Your galaxy built just a fraction more stars than the Milky Way.
+    amberLow: A bit low.  Your galaxy made fewer stars than the Milky Way, so it would look smaller and dimmer in the sky.
+    amberHigh: A bit high.  Your galaxy made more stars than the Milky Way, so it would be a brighter, busier place.
+    redLow: Far too low.  This galaxy is a shadow of the Milky Way — far fewer stars than the real thing.
+    redHigh: Far too high.  This galaxy is absolutely bursting with stars, far more than the Milky Way.
   black_hole_mass:
-    greenLow: Very close. The black hole at the centre is just a fraction lighter than the one in the Milky Way.
-    greenHigh: Very close. The black hole at the centre is just a fraction heavier than the one in the Milky Way.
-    amberLow: A bit low. Your central black hole is smaller than the Milky Way's — it's still hungry.
-    amberHigh: A bit high. Your central black hole is bigger than the Milky Way's — it's been feasting.
-    redLow: Far too low. The supermassive black hole at your galaxy's heart is surprisingly small.
-    redHigh: Far too high. The central black hole is enormous — far larger than the Milky Way's Sagittarius A*.
+    greenLow: Very close.  The black hole at the centre is just a fraction lighter than the one in the Milky Way.
+    greenHigh: Very close.  The black hole at the centre is just a fraction heavier than the one in the Milky Way.
+    amberLow: A bit low.  Your central black hole is smaller than the Milky Way's — it's still hungry.
+    amberHigh: A bit high.  Your central black hole is bigger than the Milky Way's — it's been feasting.
+    redLow: Far too low.  The supermassive black hole at your galaxy's heart is surprisingly small.
+    redHigh: Far too high.  The central black hole is enormous — far larger than the Milky Way's Sagittarius A*.
   galaxy_age:
-    greenLow: Very close. The stars in your galaxy are just a touch younger, on average, than the Milky Way's.
-    greenHigh: Very close. The stars in your galaxy are just a touch older, on average, than the Milky Way's.
-    amberLow: A bit young. Most of the stars in your galaxy formed later than in the Milky Way.
-    amberHigh: A bit old. Most of the stars in your galaxy formed earlier than in the Milky Way.
-    redLow: Far too young. Your galaxy is dominated by freshly-minted stars — it's practically a newborn.
-    redHigh: Far too old. Your galaxy is full of ancient stars that formed very early on.
+    greenLow: Very close.  The stars in your galaxy are just a touch younger, on average, than the Milky Way's.
+    greenHigh: Very close.  The stars in your galaxy are just a touch older, on average, than the Milky Way's.
+    amberLow: A bit young.  Most of the stars in your galaxy formed later than in the Milky Way.
+    amberHigh: A bit old.  Most of the stars in your galaxy formed earlier than in the Milky Way.
+    redLow: Far too young.  Your galaxy is dominated by freshly-minted stars — it's practically a newborn.
+    redHigh: Far too old.  Your galaxy is full of ancient stars that formed very early on.
 
 cosmos:
   stellar_fraction:
-    greenLow: Very close. Your universe locked just a slightly smaller fraction of its mass into stars than ours.
-    greenHigh: Very close. Your universe locked just a slightly larger fraction of its mass into stars than ours.
-    amberLow: A bit low. Your universe turned less of its raw material into stars, leaving it a bit darker and emptier.
-    amberHigh: A bit high. Your universe was a bit more efficient at cooking gas into stars than our own.
-    redLow: Far too low. Your universe struggled to form stars — most of the mass is still drifting around as gas.
-    redHigh: Far too high. Your universe is bursting with stars — it converted far more mass into starlight than ours.
+    greenLow: Very close.  Your universe locked just a slightly smaller fraction of its mass into stars than ours.
+    greenHigh: Very close.  Your universe locked just a slightly larger fraction of its mass into stars than ours.
+    amberLow: A bit low.  Your universe turned less of its raw material into stars, leaving it a bit darker and emptier.
+    amberHigh: A bit high.  Your universe was a bit more efficient at cooking gas into stars than our own.
+    redLow: Far too low.  Your universe struggled to form stars — most of the mass is still drifting around as gas.
+    redHigh: Far too high.  Your universe is bursting with stars — it converted far more mass into starlight than ours.
   average_temperature_kelvin:
-    greenLow: Very close. The gas in your universe is just a shade cooler, on average, than in ours.
-    greenHigh: Very close. The gas in your universe is just a shade warmer, on average, than in ours.
-    amberLow: A bit cool. Your gas is cooler than expected — less energetic feedback from black holes and supernovae heating things up.
-    amberHigh: A bit hot. Your gas is warmer than average — more energetic black holes and stars are heating up the cosmos.
-    redLow: Far too cool. The gas in your universe is very cold — there is barely any energetic feedback happening at all.
-    redHigh: Far too hot. The gas is scorching — black holes and stars are pumping so much energy that normal galaxy growth is disrupted.
+    greenLow: Very close.  The gas in your universe is just a shade cooler, on average, than in ours.
+    greenHigh: Very close.  The gas in your universe is just a shade warmer, on average, than in ours.
+    amberLow: A bit cool.  Your gas is cooler than expected — less energetic feedback from black holes and supernovae heating things up.
+    amberHigh: A bit hot.  Your gas is warmer than average — more energetic black holes and stars are heating up the cosmos.
+    redLow: Far too cool.  The gas in your universe is very cold — there is barely any energetic feedback happening at all.
+    redHigh: Far too hot.  The gas is scorching — black holes and stars are pumping so much energy that normal galaxy growth is disrupted.
   nhalos:
-    greenLow: Very close. Your universe built just a fraction fewer galaxy-sized dark matter halos than ours.
-    greenHigh: Very close. Your universe built just a fraction more galaxy-sized dark matter halos than ours.
-    amberLow: A bit low. Fewer galaxy-sized dark matter clumps formed — your universe needed a bit more time or stronger gravity to pull them together.
-    amberHigh: A bit high. More galaxy-sized dark matter clumps popped up than in ours — structure formation was a little more eager.
-    redLow: Far too low. Very few galaxy halos managed to form — structures barely clumped together.
-    redHigh: Far too high. Galaxy halos are everywhere — your universe is absolutely teeming with dark matter structures.
+    greenLow: Very close.  Your universe built just a fraction fewer galaxy-sized dark matter halos than ours.
+    greenHigh: Very close.  Your universe built just a fraction more galaxy-sized dark matter halos than ours.
+    amberLow: A bit low.  Fewer galaxy-sized dark matter clumps formed — your universe needed a bit more time or stronger gravity to pull them together.
+    amberHigh: A bit high.  More galaxy-sized dark matter clumps popped up than in ours — structure formation was a little more eager.
+    redLow: Far too low.  Very few galaxy halos managed to form — structures barely clumped together.
+    redHigh: Far too high.  Galaxy halos are everywhere — your universe is absolutely teeming with dark matter structures.
 `,mn=(()=>{const n=se(xi),e={};for(const t of Object.values(n))for(const[s,i]of Object.entries(t))e[s]=i;return e})(),ze="#4CD98A",$t="#E8951C",ns="#D7372A",ss=.2,is=.5,pn=2;function rs(n){const e=Math.abs(n-1);return e<=ss?{word:"On target",colour:ze}:e<=is?{word:n>1?"Too high":"Too low",colour:$t}:{word:n>1?"Way too high":"Way too low",colour:ns}}function qi(n){const e=Math.abs(n-1),t=n>=1;return e<=ss?t?"greenHigh":"greenLow":e<=is?t?"amberHigh":"amberLow":t?"redHigh":"redLow"}function Wi(n){return Math.min(Math.max(n,0),pn)/pn*100}function Yi(n){return n>=85?{word:"Almost perfect",colour:ze}:n>=65?{word:"Really close",colour:ze}:n>=45?{word:"Getting there",colour:$t}:n>=25?{word:"Not quite",colour:$t}:{word:"Way off - try again",colour:ns}}function Gi(n,e,t){var a,o;const s=qi(t),i=((a=mn[n])==null?void 0:a[s])??((o=mn[e])==null?void 0:o[s]);return i||(rs(t).colour===ze?`${e} is very close to the target value for this simulation.`:t<1?`${e} is below the target value for this simulation.`:`${e} is above the target value for this simulation.`)}function Ji(n,e,t){return n.metadata.results.map(s=>{const i=Qi(s,n,e,t);if(i===null)return null;const r=i/Math.max(s.target,1e-9),a=zi(s,n,t),o=Gi(s.id,a,r),l=pe(as(String(i),s),s.unit);return{id:s.id,label:a,value:r,rawValue:i,formattedValue:l,detail:o}}).filter(s=>s!==null)}function Qi(n,e,t,s){var l;const i=n.id,r=e.parameters.find(c=>c.id===i);if(r)return t[i]??r.fallbackValue;const a=Xi((l=s==null?void 0:s.summaryMetrics[i])==null?void 0:l.value);if(a!==null)return a;const o=s==null?void 0:s.parameterValues[i];return typeof o=="number"&&Number.isFinite(o)?o:null}function zi(n,e,t){var i,r;const s=n.id;return n.label??((i=e.parameters.find(a=>a.id===s))==null?void 0:i.label)??((r=t==null?void 0:t.summaryMetrics[s])==null?void 0:r.label)??s}function Xi(n){if(n===void 0)return null;const e=Number(n);return Number.isFinite(e)?e:null}function Zi(n){if(n.length===0)return 0;const e=n.reduce((t,s)=>t+Math.max(0,1-Math.abs(s.value-1)),0);return Math.round(e/n.length*100)}function kr(n,e){const t=document.createElement("section");t.className="overlay overlay--summary",t.hidden=!0,t.classList.add("is-hidden");let s;const i=document.createElement("div");i.className="summary-overlay";const r=document.createElement("div"),a=document.createElement("div");r.className="summary-overlay__header",a.className="summary-overlay__content";const o=document.createElement("p");o.className="summary-overlay__title",o.textContent="Run Summary";const l=document.createElement("p");l.className="summary-overlay__hint",l.textContent="Select any card for more details",r.appendChild(o),r.appendChild(l);const c=document.createElement("div");c.className="summary-overlay__actions";const m=document.createElement("button");m.className="summary-overlay__button summary-overlay__button--primary",m.type="button",m.textContent="Continue Exploring";const u=document.createElement("button"),d=document.createElement("button");u.className="summary-overlay__button",u.type="button",u.textContent="New Parameters",d.className="summary-overlay__button",d.type="button",d.textContent="Home",d.hidden=!e.showHome,m.addEventListener("click",e.onReplay),u.addEventListener("click",e.onParameters),d.addEventListener("click",e.onHome),c.appendChild(m),c.appendChild(u),c.appendChild(d),i.appendChild(r),i.appendChild(a),i.appendChild(c),t.appendChild(i);const f=document.createElement("div");f.className="sci-modal is-hidden",f.innerHTML=`
     <div class="sci-modal__card">
       <button class="sci-modal__close" type="button" aria-label="Close">&#10005;</button>
@@ -709,4 +709,4 @@ cosmos:
             </div>
             <div class="sci-bar__value">${P.formattedValue}</div>
           `,re.addEventListener("click",()=>v(P)),dt.appendChild(re)}De.appendChild(Re),De.appendChild(dt),F.appendChild(ie),F.appendChild(De),a.appendChild(F)}}}}function er(n,e){const t=e[n.id]??{label:n.id,value:"--"},s=t.value!=="--"?t.value:"--",i=tr(s,n);if(i)return{label:n.label??t.label,value:i};const r=as(s,n);return{label:n.label??t.label,value:pe(r,n.unit)}}function tr(n,e){if(e.id!=="carbonBurnt"||n==="--")return null;const t=Number(n);return Number.isFinite(t)?Math.abs(t)<1?pe(Qe(n,{scale:(e.valueScale??1)*1e3,mode:"float",precision:1}),"g CO2"):pe(Qe(n,{scale:e.valueScale,mode:"float",precision:e.precision??2}),e.unit):pe(n,e.unit)}function as(n,e){if(n==="--")return n;if(e.displayFormat==="scientific"||e.displayFormat==="compact"||e.displayFormat==="float")return Qe(n,{scale:e.valueScale,mode:e.displayFormat,precision:e.precision});if(e.displayFormat==="integer")return Qe(n,{scale:e.valueScale,mode:"integer"});const t=Number(n);if(!Number.isFinite(t))return n;const s=e.valueScale??1,i=t*s;return Gt(i)}const os="universe-engine-advanced-settings",Sr="RSSSE26UM_Engine";function Ct(){return{lockedScaleId:null,manifestSource:"online",verboseLogging:!1,hiddenScaleIds:[]}}function nr(n){const e=localStorage.getItem(os);if(!e)return Ct();try{const t=JSON.parse(e);return ls(t,n)}catch{return Ct()}}function vr(n,e){const t=ls(n,e);return localStorage.setItem(os,JSON.stringify({lockedScaleId:t.lockedScaleId,manifestSource:t.manifestSource,verboseLogging:t.verboseLogging,hiddenScaleIds:t.hiddenScaleIds})),t}function ls(n,e){const t=Ct(),s=new Set(e),i=n.manifestSource==="online"||n.manifestSource==="local"?n.manifestSource:t.manifestSource,r=typeof n.lockedScaleId=="string"&&s.has(n.lockedScaleId)?n.lockedScaleId:null,a=Array.isArray(n.hiddenScaleIds)?n.hiddenScaleIds.filter((o,l,c)=>typeof o=="string"&&s.has(o)&&c.indexOf(o)===l&&o!==r):t.hiddenScaleIds;return!r&&a.length>=e.length&&e.length>0&&a.pop(),{lockedScaleId:r,manifestSource:i,verboseLogging:!!n.verboseLogging,hiddenScaleIds:a}}function _r(n,e){if(n.lockedScaleId)return[n.lockedScaleId];const t=new Set(n.hiddenScaleIds),s=e.filter(i=>!t.has(i));return s.length>0?s:e.slice(0,1)}function sr(n){return n.replace(/\.mp4($|\?)/,".yaml$1")}async function Nr(n){try{const e=await fetch(n);if(!e.ok)return null;const t=await e.text(),s=se(t),i=ce(s.wallclockSeconds),r=ce(s.computeUsed),a=ce(s.memoryUsed),o=ce(s.carbonBurnt),l=ce(s.particlesUpdated),c=await ir(n),m=ar(s.summaryMetrics);return i===null||r===null||a===null||o===null||l===null?null:{wallclockSeconds:i,computeUsed:r,memoryUsed:a,carbonBurnt:o,particlesUpdated:l,parameterValues:c,summaryMetrics:m}}catch{return null}}async function ir(n){try{const e=await fetch(rr(n));if(!e.ok)return{};const t=await e.text(),s=se(t);return or(s)}catch{return{}}}function rr(n){return n.replace(/run_summary\.yaml($|\?)/,"parameters.yaml$1")}function ce(n){const e=typeof n=="number"?n:Number(n);return Number.isFinite(e)?e:null}function ar(n){if(!n||typeof n!="object")return{};const e=n,t={};for(const[s,i]of Object.entries(e)){if(!i||typeof i!="object")continue;const r=i,a=typeof r.label=="string"?r.label:s,o=r.value;o!=null&&(t[s]={label:a,value:String(o)})}return t}function or(n){if(!n||typeof n!="object")return{};const e={};for(const[t,s]of Object.entries(n)){const i=ce(s);i!==null&&(e[t]=i)}return e}const cs="[UniverseEngine]",lr=["planetary","galaxy","cosmos"];function us(){return nr(lr).verboseLogging}function Jt(n,e){us()&&console.info(cs,n,e??"")}function Qt(n,e){us()&&console.warn(cs,n,e??"")}const cr={local:"assets/local-manifest.json",online:Hi};function Er(n="local"){let e=n;const t=new Map;return{getSource(){return e},setSource(s){s==="online"&&t.delete("online"),e=s,Jt("Manifest source updated",{source:s})},resetCache(){t.clear()},async preloadActiveManifest(){await fs(e,t)},async findNearestVideo(s,i,r){const a=await hr(e,t,s,i,r);if(a)return a;const o=ur(s);return Qt("Falling back to placeholder assets",{simClassId:s,source:e,fallbackUrl:o}),{url:o,liveDataUrl:fr(s),summaryUrl:sr(o)}}}}function ur(n){switch(n){case"planetary":return R("assets/planet_test.mp4");case"galaxy":return R("assets/galaxy_test.mp4");case"cosmos":return R("assets/cosmo_test.mp4");default:return R("assets/galaxy_test.mp4")}}function fr(n){switch(n){case"planetary":return R("assets/planet_test_planetary_stats.csv");case"galaxy":return R("assets/galaxy_test_galaxy_stats.csv");case"cosmos":return R("assets/cosmo_test_cosmos_stats.csv");default:return R("assets/galaxy_test_galaxy_stats.csv")}}async function fs(n,e){const t=e.get(n);if(t)return t;const s=cr[n],i=fetch(R(s)).then(async r=>{if(!r.ok)throw new Error(`Failed to load manifest: ${s}`);return Jt("Loaded manifest",{source:n,manifestPath:s}),await r.json()}).catch(r=>(Qt("Manifest unavailable",{source:n,manifestPath:s,error:r instanceof Error?r.message:String(r)}),{version:1,runs:[]}));return e.set(n,i),i}async function hr(n,e,t,s,i){const a=(await fs(n,e)).runs.filter(u=>u.simulationId===t);if(a.length===0)return Qt("No manifest runs found for simulation",{simClassId:t,source:n}),null;let o=a[0],l=gn(o,s,i);for(const u of a.slice(1)){const d=gn(u,s,i);d<l&&(o=u,l=d)}const c=o.defaultView??Object.keys(o.views)[0],m=o.views[c];return m?(Jt("Selected manifest-backed run",{simClassId:t,source:n,runId:o.runId,selectedValues:i,distance:l,viewId:c}),{url:R(m),liveDataUrl:R(o.liveDataPath),summaryUrl:R(o.summaryPath),viewId:c,runId:o.runId,views:Object.fromEntries(Object.entries(o.views).map(([u,d])=>[u,R(d)]))}):null}function gn(n,e,t){return e.length===0?0:e.reduce((i,r)=>{var c;const a=t[r.id]??r.fallbackValue,o=((c=n.parameters)==null?void 0:c[r.id])??r.fallbackValue,l=Math.max(r.max-r.min,1e-9);return i+Math.abs(a-o)/l},0)/e.length}export{Sr as A,br as I,dr as S,wr as T,Gt as a,yr as b,R as c,gr as d,Qt as e,Fi as f,nr as g,Er as h,mr as i,pr as j,ur as k,Jt as l,kr as m,ji as n,_r as o,se as p,Nr as q,ts as r,vr as s,pe as w};
-//# sourceMappingURL=placeholder-assets-jXtM8aWE.js.map
+//# sourceMappingURL=placeholder-assets-Bdk6G2F_.js.map
