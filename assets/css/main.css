@@ -4436,14 +4436,16 @@ body.is-mobile.landing #footer {
   display: flex;
   gap: 1em;
   align-items: flex-start;
+  justify-content: center;
   margin: 1.5em 0;
   flex-wrap: wrap;
+  width: 100%;
 }
 .gallery-2col figure {
   margin: 0;
 }
 .gallery-2col img {
-  height: 300px;
+  height: 420px;
   width: auto;
   max-width: 100%;
   border-radius: 4px;
